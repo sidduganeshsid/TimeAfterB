@@ -35,7 +35,7 @@ function updateClock(birthDate) {
 }
 
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
-const birthDate = "2001-09-09T05:05:00";
+const birthDate = "2001-09-09T00:00:00";
 
 // Update the clock every second
 setInterval(() => {
