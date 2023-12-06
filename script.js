@@ -21,6 +21,8 @@ function updateClock(birthDate) {
     // else
     // {
     const ageString = `Age: ${age} years`;
+    const months = `Months : ${Math.floor(days/30)}`;
+
     // }
     const PresentDayString = `Present Day : ${days+1}`;
 
@@ -32,10 +34,11 @@ function updateClock(birthDate) {
     else
     document.getElementById('age').textContent = "";
     document.getElementById('PresentDay').textContent = PresentDayString;
+    document.getElementById('CompletedMonths').textContent = months;
 }
-
+//my b.tech completed on Octerber 19
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
-const birthDate = "2001-09-09T00:00:00";
+const birthDate = "2023-07-08T00:00:00";
 
 // Update the clock every second
 setInterval(() => {

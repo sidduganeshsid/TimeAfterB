@@ -45,6 +45,11 @@ img{
     height: 200px;
     width: 200px ;
 }
+#CompletedMonths
+{
+    font-size: 3rem;
+    color:whitesmoke;
+}
 
 /* #time {
     color: #fff;
