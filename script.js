@@ -79,17 +79,17 @@ function updatefClock(fDate) {
 
     // var UserName = "Siddu Ganesh Musa";
     // document.getElementById('fname').textContent = UserName;
-    // document.getElementById('ftime').textContent = timeString;
-    if(age>=1)
-    document.getElementById('fage').textContent = ageString;
-    else
+    document.getElementById('ftime').textContent = timeString;
+    // if(age>=1)
+    // document.getElementById('fage').textContent = ageString;
+    // else
     document.getElementById('fage').textContent = "";
     document.getElementById('fPresentDay').textContent = fPresentDayString;
     document.getElementById('fCompletedMonths').textContent = months;
 }
 //my b.tech completed on Octerber 19
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
-const fDate = "2023-12-12T00:00:00";
+const fDate = "2023-12-109T00:00:00";
 
 // Update the clock every second
 setInterval(() => {
