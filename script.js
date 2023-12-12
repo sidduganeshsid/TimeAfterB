@@ -79,12 +79,11 @@ function updatefClock(fDate) {
     document.getElementById('fPresentDay').textContent = fPresentDayString;
     document.getElementById('fCompletedMonths').textContent = fmonths;
 }
-//my b.tech completed on Octerber 19
-// Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
+
 const fDate = "2023-12-12T09:00:00";
 
 // Update the clock every second
-setInterval(() => {
+setIntervalf(() => {
     updatefClock(fDate);
 }, 1000);
 
