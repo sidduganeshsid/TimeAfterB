@@ -59,9 +59,9 @@ function updatefClock(fDate) {
     const hours = Math.floor(elapsedTime / (1000 * 60 * 60)) % 24;
     const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
 
-    const birthYear = birthDateTime.getFullYear();
+    const fYear = fDateTime.getFullYear();
     const currentYear = now.getFullYear();
-    const age = currentYear - birthYear;
+    const age = currentYear - fYear;
 
     const timeString = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
     // const ageString = "";
@@ -77,9 +77,9 @@ function updatefClock(fDate) {
     // }
     const PresentDayString = `Present Day : ${days+1}`;
 
-    var UserName = "Siddu Ganesh Musa";
-    document.getElementById('fname').textContent = UserName;
-    document.getElementById('ftime').textContent = timeString;
+    // var UserName = "Siddu Ganesh Musa";
+    // document.getElementById('fname').textContent = UserName;
+    // document.getElementById('ftime').textContent = timeString;
     if(age>=1)
     document.getElementById('fage').textContent = ageString;
     else
