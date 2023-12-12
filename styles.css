@@ -51,6 +51,33 @@ img{
     color:whitesmoke;
 }
 
+/*another time to for job*/
+
+#fPresentDay {
+    color: #fff;
+    font-size: 2rem;
+    /* text-align: center; */
+}
+
+#fage {
+    color: #fff;
+    font-size: 2rem;
+    /* text-align: center; */
+}
+
+#fname{
+    color:aqua;
+    font-size: 3rem;
+    /* text-align: center; */
+}
+
+#fCompletedMonths
+{
+    font-size: 3rem;
+    color:whitesmoke;
+}
+
+
 /* #time {
     color: #fff;
     font-size: 2rem;
