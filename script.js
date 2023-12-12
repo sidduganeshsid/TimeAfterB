@@ -76,14 +76,14 @@ function updatefClock(fDate) {
 
   //elements 
     document.getElementById('ftime').textContent = ftimeString;
-    document.getElementById('fPresentDay').textContent = fPresentDayString;
-    document.getElementById('fCompletedMonths').textContent = fmonths;
+    // document.getElementById('fPresentDay').textContent = fPresentDayString;
+    // document.getElementById('fCompletedMonths').textContent = fmonths;
 }
 
 const fDate = "2023-12-12T09:00:00";
 
 // Update the clock every second
-setIntervalf(() => {
+setInterval(() => {
     updatefClock(fDate);
 }, 1000);
 
