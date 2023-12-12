@@ -75,7 +75,7 @@ function updatefClock(fDate) {
     const months = `Months : ${Math.floor(days/30)}`;
 
     // }
-    const PresentDayString = `Present Day : ${days+1}`;
+    const fPresentDayString = `Present Day : ${days+1}`;
 
     // var UserName = "Siddu Ganesh Musa";
     // document.getElementById('fname').textContent = UserName;
@@ -84,7 +84,7 @@ function updatefClock(fDate) {
     document.getElementById('fage').textContent = ageString;
     else
     document.getElementById('fage').textContent = "";
-    document.getElementById('fPresentDay').textContent = PresentDayString;
+    document.getElementById('fPresentDay').textContent = fPresentDayString;
     document.getElementById('fCompletedMonths').textContent = months;
 }
 //my b.tech completed on Octerber 19
