@@ -64,32 +64,24 @@ function updatefClock(fDate) {
     const age = currentYear - fYear;
 
     const timeString = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-    // const ageString = "";
-    // if(age==1)
-    // {
-    //     ageString = `Age: ${age} year`;
-    // }
-    // else
-    // {
     const ageString = `Age: ${age} years`;
     const months = `Months : ${Math.floor(days/30)}`;
 
-    // }
+
     const fPresentDayString = `Present Day : ${days+1}`;
 
-    // var UserName = "Siddu Ganesh Musa";
-    // document.getElementById('fname').textContent = UserName;
+  
     document.getElementById('ftime').textContent = timeString;
     // if(age>=1)
     // document.getElementById('fage').textContent = ageString;
     // else
-    document.getElementById('fage').textContent = "";
+    document.getElementById('fage').textContent = ageString;
     document.getElementById('fPresentDay').textContent = fPresentDayString;
     document.getElementById('fCompletedMonths').textContent = months;
 }
 //my b.tech completed on Octerber 19
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
-const fDate = "2023-12-109T00:00:00";
+const fDate = "2023-12-09T00:00:00";
 
 // Update the clock every second
 setInterval(() => {
