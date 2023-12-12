@@ -38,7 +38,7 @@ function updateClock(birthDate) {
 }
 //my b.tech completed on Octerber 19
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
-const birthDate = "2023-07-08T:00:00";
+const birthDate = "2023-07-08T00:00:00";
 
 // Update the clock every second
 setInterval(() => {
