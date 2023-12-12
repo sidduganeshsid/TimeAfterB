@@ -75,7 +75,7 @@ function updatefClock(fDate) {
     // if(age>=1)
     // document.getElementById('fage').textContent = ageString;
     // else
-    document.getElementById('fage').textContent = ageString;
+    // document.getElementById('fage').textContent = ageString;
     document.getElementById('fPresentDay').textContent = fPresentDayString;
     document.getElementById('fCompletedMonths').textContent = months;
 }
