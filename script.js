@@ -50,30 +50,30 @@ updateClock(birthDate);
 
 
 function updatefClock(fDate) {
-    const now = new Date();
+    const fnow = new Date();
     const fDateTime = new Date(fDate);
-    const elapsedTime = now - fDateTime;
+    const felapsedTime = now - fDateTime;
 
-    const seconds = Math.floor(elapsedTime / 1000) % 60;
-    const minutes = Math.floor(elapsedTime / (1000 * 60)) % 60;
-    const hours = Math.floor(elapsedTime / (1000 * 60 * 60)) % 24;
-    const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+    const fseconds = Math.floor(felapsedTime / 1000) % 60;
+    const fminutes = Math.floor(felapsedTime / (1000 * 60)) % 60;
+    const fhours = Math.floor(felapsedTime / (1000 * 60 * 60)) % 24;
+    const fdays = Math.floor(felapsedTime / (1000 * 60 * 60 * 24));
 
     const fYear = fDateTime.getFullYear();
-    const currentYear = now.getFullYear();
-    const age = currentYear - fYear;
+    const fcurrentYear = fnow.getFullYear();
+    const fage = fcurrentYear - fYear;
 
-    const timeString = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-    const ageString = `Age: ${age} years`;
-    const months = `Months : ${Math.floor(days/30)}`;
+    const ftimeString = `${fdays} days, ${fhours} hours, ${fminutes} minutes, ${fseconds} seconds`;
+    const fageString = `Age: ${fage} years`;
+    const fmonths = `Months : ${Math.floor(fdays/30)}`;
 
 
-    const fPresentDayString = `Present Day : ${days+1}`;
+    const fPresentDayString = `Present Day : ${fdays+1}`;
 
   //elements 
-    document.getElementById('ftime').textContent = timeString;
+    document.getElementById('ftime').textContent = ftimeString;
     document.getElementById('fPresentDay').textContent = fPresentDayString;
-    document.getElementById('fCompletedMonths').textContent = months;
+    document.getElementById('fCompletedMonths').textContent = fmonths;
 }
 //my b.tech completed on Octerber 19
 // Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
