@@ -1,5 +1,6 @@
+ const now = new Date();
+
 function updateClock(birthDate) {
-    const now = new Date();
     const birthDateTime = new Date(birthDate);
     const elapsedTime = now - birthDateTime;
 
@@ -50,12 +51,11 @@ updateClock(birthDate);
 
 
 function updatefClock(fDate) {
-    //present time getter
-    const fnow = new Date();
+    
     //our setting time
     const fDateTime = new Date(fDate);
     //diff of present and our time in milliseconds
-    const felapsedTime = fnow - fDateTime;
+    const felapsedTime = now - fDateTime;
 
     //time difference arranger
     const fseconds = Math.floor(felapsedTime / 1000) % 60;
@@ -64,7 +64,7 @@ function updatefClock(fDate) {
     const fdays = Math.floor(felapsedTime / (1000 * 60 * 60 * 24));
     
     const fYear = fDateTime.getFullYear();
-    const fcurrentYear = fnow.getFullYear();
+    const fcurrentYear = now.getFullYear();
     const fage = fcurrentYear - fYear;
 
     const ftimeString = `${fdays} days, ${fhours} hours, ${fminutes} minutes, ${fseconds} seconds`;
