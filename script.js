@@ -47,3 +47,55 @@ setInterval(() => {
 
 // Initial update
 updateClock(birthDate);
+
+
+function updatefClock(fDate) {
+    const now = new Date();
+    const fDateTime = new Date(fDate);
+    const elapsedTime = now - fDateTime;
+
+    const seconds = Math.floor(elapsedTime / 1000) % 60;
+    const minutes = Math.floor(elapsedTime / (1000 * 60)) % 60;
+    const hours = Math.floor(elapsedTime / (1000 * 60 * 60)) % 24;
+    const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+
+    const birthYear = birthDateTime.getFullYear();
+    const currentYear = now.getFullYear();
+    const age = currentYear - birthYear;
+
+    const timeString = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    // const ageString = "";
+    // if(age==1)
+    // {
+    //     ageString = `Age: ${age} year`;
+    // }
+    // else
+    // {
+    const ageString = `Age: ${age} years`;
+    const months = `Months : ${Math.floor(days/30)}`;
+
+    // }
+    const PresentDayString = `Present Day : ${days+1}`;
+
+    var UserName = "Siddu Ganesh Musa";
+    document.getElementById('fname').textContent = UserName;
+    document.getElementById('ftime').textContent = timeString;
+    if(age>=1)
+    document.getElementById('fage').textContent = ageString;
+    else
+    document.getElementById('fage').textContent = "";
+    document.getElementById('fPresentDay').textContent = PresentDayString;
+    document.getElementById('fCompletedMonths').textContent = months;
+}
+//my b.tech completed on Octerber 19
+// Replace this with your birth date and time in "YYYY-MM-DDTHH:MM:SS" format
+const fDate = "2023-12-12T00:00:00";
+
+// Update the clock every second
+setInterval(() => {
+    updatefClock(fDate);
+}, 1000);
+
+// Initial update
+updatefClock(fDate);
+
