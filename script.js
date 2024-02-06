@@ -30,10 +30,10 @@ function updateClock(birthDate) {
     var UserName = "Siddu Ganesh Musa";
     document.getElementById('name').textContent = UserName;
     document.getElementById('time').textContent = timeString;
-    if(age>=1)
-    document.getElementById('age').textContent = ageString;
-    else
-    document.getElementById('age').textContent = "";
+    // if(age>=1)
+    // document.getElementById('age').textContent = ageString;
+    // else
+    // document.getElementById('age').textContent = "";
     document.getElementById('PresentDay').textContent = PresentDayString;
     document.getElementById('CompletedMonths').textContent = months;
 }
